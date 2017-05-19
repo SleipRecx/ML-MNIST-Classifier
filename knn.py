@@ -13,8 +13,6 @@ X_train = X_train[:200]
 y_train = y_train[:200]
 X_test_original = X_test
 
-print X_train[0]
-
 # flatten 28*28 images to a 784 vector for each image
 num_pixels = X_train.shape[1] * X_train.shape[2]
 X_train = X_train.reshape(X_train.shape[0], num_pixels).astype('float32')
